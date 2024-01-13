@@ -1,0 +1,10 @@
+Q5. How to unstage changes from the staged area. write command for it.
+
+command:
+
+git restore --unstage
+this will move all files from stagesd to unstage area
+
+
+git restore --unstage temp.txt
+this will just move temp.txt to unstage area
