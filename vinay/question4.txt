@@ -1,0 +1,11 @@
+Q4. How to delete one commit or multiple commits permanently Write command for it.
+
+permanently deleting is done to undo the lastest changes and completely remove
+the changes as well
+
+these changes are not staged they are deleted permanently
+
+command :
+git reset --hard HEAD~4
+
+this will delete 4 latest commits
