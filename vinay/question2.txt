@@ -1,0 +1,19 @@
+Q2. How to set multiple remote repositories for the same project? Explain the u>
+
+Multiple remote repositories can be added this multiple repo case is useful
+when a project is divided into multiple repos
+so the person can easily switch between repositories
+
+command:
+git remote add unique-name repo-url
+
+working demo:
+$ git remote add development https://github.com/AlgorithmChopda/sample-repo.git
+
+
+$ git remote -v
+
+development     https://github.com/AlgorithmChopda/sample-repo.git (fetch)
+development     https://github.com/AlgorithmChopda/sample-repo.git (push)
+origin  git@github.com:AlgorithmChopda/git-basics.git (fetch)
+origin  git@github.com:AlgorithmChopda/git-basics.git (push)
