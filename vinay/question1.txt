@@ -1,0 +1,25 @@
+Q1. What is cherry-pick? Explain the use case of it also write steps to do it.
+
+Cherry pick means to include only specific commits from a branch, many a time we dont
+need all commits but just some specific commit that has the particular change or
+bug fix in such case cherry pick is used
+
+cherrypick picks the specified commit and places it in front of lastest commit
+
+branch1 commit : a - b - c
+branch2 commit : x - y
+
+if only x commit is needed then after cherry pick:
+
+branch1 commit a - b - c - x
+
+
+Stpes:
+1. do git log
+2. get the commit-id of the commit you want to cherry pick
+3. checkout to desired branch
+4. git cherrypick [commit-id]
+
+
+Code:
+git cherry-pick 50f58dd1e3eded8a02179835c852ba24ecac0481
