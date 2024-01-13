@@ -1,0 +1,23 @@
+Q5. Difference between --force push and --force-with-lease, You have to show the
+use of both, also you have to show in what scenario --force-with-lease is used?
+
+--force will forcefully push the changes into the remote branch, this can lead to data loss
+
+git push origin main --force
+
+
+--force-with-lease: before updating the remote It checks whether the remote branch
+has been updated by others since your last fetch. If someone else has pushed changes,
+the push will be rejected, preventing unintentional overwrites.
+
+git push origin main --force-with-lease
+
+
+
+scenario:
+--force
+	1. rebase
+	2. when you want the local code to be exact same to main branch
+
+--force-with-lease
+	1. to avoid unintentional push
